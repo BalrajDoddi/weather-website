@@ -41,6 +41,10 @@ img {
   width: 250px;
 }
 
+#img {
+  width: 50px;
+}
+
 input {
   border: 1px solid #cccccc;
   padding: 8px;
