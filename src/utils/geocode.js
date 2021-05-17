@@ -5,7 +5,7 @@ const geocode = (address, callback) => {
     address
   )}.json?access_token=pk.eyJ1IjoiYmFscmFqZG9kZGkiLCJhIjoiY2tvb2Z3ZnRwMGIwdDJvcDk5cGkxYjExNyJ9.qozpvGCb8HtzhDzQ13TRNQ`;
 
-  request({ url, json: true }, (error, { body }) => {
+  request({ url, json: true }, (error, { body } = {}) => {
     if (error) {
       callback('Unable to connect geocoding service!', undefined);
     } else if (body.features.length === 0) {
